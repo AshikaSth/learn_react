@@ -1,8 +1,7 @@
 import React from "react";
-const Greet = ({name, heroName}) => {
+const Greet = (props) => {
   
-  //props.name = "Ashika"; // This will not change the original prop value
-  // props.heroName = "Ashika"; // This will not change the original prop value
+  const {name, heroName} = props;
   return (
     <div>
       <h1>
