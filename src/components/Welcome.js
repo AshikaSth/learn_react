@@ -2,8 +2,14 @@ import React, { Component } from "react";
 
 class Welcome extends Component {
   render() {
-    return <h1>Welcome {this.props.name} a.k.a {this.props.heroName}</h1>;
+    const { name, heroName } = this.props; // Destructuring props
+    return (
+      <h1>
+        Welcome {name} a.k.a {heroName}
+      </h1>
+    );
   }
 }
+//in classs we tend to destructure props in render method
 
 export default Welcome;
